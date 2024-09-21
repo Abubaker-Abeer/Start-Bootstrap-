@@ -1,0 +1,666 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+/*public*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    clear: both;
+}
+
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;  
+    font-weight: 700; 
+}
+p{
+    font-weight: 400;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*header*/
+
+
+.navbar{
+ position: fixed;
+ width: 100%;
+ overflow: hidden;
+ margin-top: 20px;
+
+}
+.navbar .logo{
+float: left;
+width: 35%;
+color: rgb(255,255,255,.7);
+font-size: 20px;
+
+}
+.navbar .nav{
+    float: left;
+    width: 65%;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.navbar .logo:hover{
+    color: #fff;
+}
+.navbar .nav .list-item{
+    display: inline-block;
+    
+}
+.navbar .nav .list-item a{
+    font-size: 16px;
+    margin-right: 20px;
+    color: rgb(255,255,255,.7);
+}
+.nav .list-item a:hover{
+    color: #fff;
+}
+.header-content{
+    background:linear-gradient(to bottom,rgb(92,77,66,.8) 0, rgb(92,77, 66,.8) 100%),url(../img/header.jpg ) ;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+
+
+}
+
+
+.header-content h1{
+    color: #fff;
+    font-size: 50px;
+    margin: auto;
+    width: 60%;
+    margin-top: 40px;
+    
+}
+.header-content .line{
+  
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f4623a;
+  margin: 15px auto;  
+  
+}
+.header-content p{
+    color: rgb(255,255,255,.7);
+    font-size: 20px;
+    width: 73%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.header-content a{
+    color: #fff;
+    background-color: #f4623a;
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* About */
+.about{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f4623a;
+}
+.about-content h2{
+    color: #fff;
+    font-size: 32px;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 10px;
+   
+    
+}
+.about-content .line{
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ffff;
+  margin: 15px auto;  
+  
+}
+.about-content p{
+    color: rgb(255,255,255,.7);
+    font-size: 19px;
+    width: 75%;
+    margin: auto;
+}
+.about-content a{
+    color: #000;
+    background-color: #fff;
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+/*services*/
+.services{
+    text-align: center;
+    background-color: #ffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    
+}
+.services h2{
+    color: #000;
+    font-size: 35px;
+    margin: auto;
+    width: 60%;
+    
+}
+.services .line{
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #f4623a;
+    margin: 15px auto;  
+    
+  }
+ .services .service{
+    margin-top: 20px;
+    float: left;
+    width:25%;
+}
+.services .container{
+    overflow: auto;
+    margin-top: 50px;
+}
+.service i{
+   color:#f4623a;
+   font-size: 40px;
+   margin-bottom: 10px;
+
+}
+.service h3{
+    margin-bottom: 10px;
+}
+.service p {
+   color: #6c757d;
+   margin: auto;
+}
+/*Portfolio*/
+.Portfolio{
+    padding-top: 10px;
+}
+
+.Portfolio .img{
+  float:left;
+  width: 33.33%;
+  position: relative;
+  
+}
+
+.Portfolio img{
+    display: block;
+    width: 100%;
+}
+.overlay {
+    background-color: #f4623a;
+    position:absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+}
+.img:hover .overlay{
+    cursor: pointer;
+    opacity: .6;
+  }
+.overlay h2 {
+    padding-top: 80px;
+    color:#fff;
+    font-size: 15px;
+    opacity: 1;
+    text-transform: uppercase;
+}
+.overlay p {
+    padding-top: 10px;
+    color:#fff;
+    font-size: 18px;
+    
+}
+
+.download{
+    background-color: #343a40;
+    padding: 100px;
+    text-align: center;
+}
+.download h2{
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.download  a{
+    color: #000;
+    background-color: #fff;
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+/*contact*/
+.contact{
+        text-align: center;
+        background-color: #ffff;
+        padding: 100px;
+}
+.contact h2{
+    color: #000;
+    font-size: 35px;
+    margin: auto;
+    width: 60%;
+    
+}
+.contact .line{
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #f4623a;
+    margin: 15px auto;  
+    
+  }
+.contact p{
+    color: #6c757d ;
+    font-size: 19px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.contact form{
+    display: block;
+    margin-top: 0em;
+}
+.contact-item div{
+display:grid;
+width: 50%;
+margin: auto;
+
+}
+.contact-item .form{
+    margin: 10px 0 ;
+    padding: 15px;
+   border: 1px solid #f4623a;
+   font-size: 15px;
+   
+   
+
+}
+.contact-item textarea{
+    height: 150px;
+}
+.contact-item .btn{
+    background-color: #f4623a;
+    border-radius: 100px;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 36px;
+
+}
+.contact .phone{
+    padding-top: 70px;
+    text-align: center;
+
+}
+.contact .phone i{
+    display: block;
+    font-size: 35px;
+    color: #f4623a;
+    margin-bottom:10px ;
+}
+/*footer*/
+.footer{
+    background-color: rgb(248,249,250);
+}
+.footer p {
+        text-align: center;
+        padding: 50px;
+        color:#6c757d;
+        font-size: 15px;
+        width: 100%;
+        
+}
+/* media query*/
+@media (min-width:576px)and (max-width:992px){
+    .navbar .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+     }
+     
+    
+    .navbar .nav{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        
+        }
+        .navbar .nav .list-item a{
+            font-size: 20px;
+            margin: auto;
+            margin-right: 20px;
+            padding-right: 10px;
+            
+          
+        }
+        .header-content{
+            padding: 20px;
+            padding-top: 20%;
+            height: 70vh;
+            background-position:center;
+            background-size: cover;
+
+        }
+        .header-content h1{
+            font-size: 40px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+            
+        }
+        .header-content p{
+            
+            font-size: 20px;
+            width: 100%;
+           padding-top: 60px;
+            margin: auto;
+           padding-bottom: 60px;
+        }
+       
+    .about-content h2{
+      font-size: 27px;
+       width: 100%
+    
+      }
+      .about-content p{
+        font-size: 18px;
+        width: 100%;
+       padding-top: 60px;
+       padding-bottom: 60px;
+    }
+
+    .services{
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    
+        
+    }
+    .services h2{
+        font-size: 30px;
+        width: 100%;
+        
+    }
+   
+     .services .service{
+        float: left;
+        width:50%;
+       padding-top: 30px;
+    }
+    .service i{
+        font-size: 40px;
+     }
+     .Portfolio{
+        padding-top: 10px;
+    }
+    
+    .Portfolio .img{
+      float:left;
+      width: 50%;
+      
+    }
+    .contact{
+           
+        padding: 50px;
+}
+.contact h2{
+    
+    font-size: 25px;
+    width: 100%;
+    
+}
+.contact p{
+    
+    font-size: 18px;
+    width: 100%;
+   
+}
+
+.contact-item div{
+display:grid;
+width: 100%;
+margin: auto;
+
+}
+
+.contact .phone{
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+    
+       
+    }
+
+
+
+    @media (max-width:576px){
+        .navbar .logo{
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+         }
+         
+        
+        .navbar .nav{
+            float: none;
+            width: 100%;
+            
+            }
+        .navbar .nav .list-item a{
+            font-size: 16px;
+            margin-right: 20px;
+            padding-right: 10px;
+            margin: auto;
+          
+        }
+
+        .header-content{
+            padding: 20px;
+            padding-top: 20%;
+            height: 70vh;
+            background-position:center;
+            background-size: cover;
+
+        }
+        .header-content h1{
+            font-size: 25px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+            
+        }
+        .header-content p{
+            
+            font-size: 18px;
+            width: 100%;
+           margin-top: 40px;
+            margin: auto;
+           margin-bottom: 20px;
+        }
+
+     .about{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    .about-content h2{
+      font-size: 22px;
+       width: 100%
+    
+      }
+      .about-content p{
+          padding-top: 20px;
+          font-size: 16px;
+            width: 100%;  
+    }
+    .services{
+        text-align: center;
+        background-color: #ffff;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    
+        
+    }
+    .services h2{
+       
+        font-size: 25px;
+        width: 100%;
+        
+    }
+   
+     .services .service{
+        float: none;
+        width:100%;
+        margin-top: 50px;
+    }
+    .service i{
+        font-size: 30px;
+     }
+    
+     .Portfolio{
+        padding-top: 10px;
+    }
+    
+    .Portfolio .img{
+      float:none;
+      width: 100%;
+      
+    }
+    
+    .download{
+        
+        padding: 50px;
+        
+    }
+    .download h2{
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
+        
+    }
+  
+   
+    .contact{
+           
+            padding: 50px;
+    }
+    .contact h2{
+        
+        font-size: 25px;
+        width: 100%;
+        
+    }
+    .contact p{
+        
+        font-size: 15px;
+        width: 100%;
+       
+    } 
+    .contact-item div{
+    display:grid;
+    width: 100%;
+    margin: auto;
+    
+    }
+    
+    .contact .phone{
+        padding-top: 40px;
+        text-align: center;
+    
+    }
+   
+ }
+@media (min-width:320px)and (max-width:350px)    {
+    .navbar .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 18px;
+     }
+     
+    
+    
+        .navbar .nav .list-item a{
+            font-size: 12px;
+            margin-right: 20px;
+            padding-right: 10px;
+            margin: auto;
+          
+        }
+
+        .header-content{
+            padding: 20px;
+            padding-top: 20%;
+            height: 100vh;
+            background-position:center;
+            background-size: cover;
+
+        }
+        .header-content h1{
+            font-size: 20px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+            
+        }
+        .header-content p{
+            
+            font-size: 12px;
+            width: 100%;
+           margin-top: 40px;
+            margin: auto;
+           margin-bottom: 40px;
+        }
+}
+
